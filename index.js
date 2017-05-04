@@ -1,17 +1,17 @@
 function iterativeLog(array) {
-  array.forEach(function(element, index) {
-    console.log( `${index}: ${element}`);
-  });
+  array.forEach((el, i) => {
+    console.log(`${i}: ${el}`)
+  })
 }
-
 
 function iterate(callback) {
-  var array = [];
-  callback(array);
-  return array;
+  const cats = ["Garfield", "Bianca", "Petunia"]
+
+  cats.forEach(callback)
+
+  return cats
 }
 
-function doToArray(array, callback){
-  array.forEach(callback);
-  return array;
+function doToArray(array, callback) {
+  array.forEach(callback)
 }
